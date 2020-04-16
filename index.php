@@ -75,7 +75,7 @@ if (mysqli_connect_errno()) {
         while ($row = mysqli_fetch_array($result)) {
             $num++;
             $uuid = $row['UUID'];
-            $nick = $row['NAME'];
+            $nick = $row['Name'];
             $kills = $row['Kills'];
 			$deaths = $row['Deaths'];
             $img = sprintf('<img src="https://minotar.net/helm/%s/%d.png">', $nick, $head_size);
